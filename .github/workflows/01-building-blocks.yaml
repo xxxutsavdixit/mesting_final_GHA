@@ -1,0 +1,11 @@
+name: 01 - Building Blocks
+on: 
+    push
+jobs:
+    echo:
+      runs-on: ubuntu-latest
+      steps:
+       - name: write the trigger name
+         run: |
+             echo "This is push event  ${{github.event_name}}" 
+
