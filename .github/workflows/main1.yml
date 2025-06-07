@@ -1,1 +1,20 @@
-name: This is yest 
+name: This is yest
+on:
+  - push 
+  - workflow_dispatch
+jobs:
+      echo-hello:
+       runs-on: ubuntu-latest'
+       steps:
+           - name: rpint hello 
+             sh: |
+                  echo "Hello"
+      
+      echo-goodbye:
+       runs-on: ubuntu-latest'
+       steps:
+           - name: peint goodby 
+             sh: |
+                  echo "GoodBy"
+
+
