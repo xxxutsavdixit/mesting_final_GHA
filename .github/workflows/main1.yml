@@ -4,13 +4,13 @@ on:
   - workflow_dispatch
 jobs:
       echo-hello:
-       runs-on: ubuntu-latest'
+       runs-on: ubuntu-latest
        steps:
            - name: rpint hello 
              run: echo "Hello"
       
       echo-goodbye:
-       runs-on: ubuntu-latest'
+       runs-on: ubuntu-latest
        steps:
            - name: peint goodby 
              run: echo "GoodBy"
