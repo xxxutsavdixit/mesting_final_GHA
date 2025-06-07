@@ -7,14 +7,12 @@ jobs:
        runs-on: ubuntu-latest'
        steps:
            - name: rpint hello 
-             sh: |
-                  echo "Hello"
+             run: echo "Hello"
       
       echo-goodbye:
        runs-on: ubuntu-latest'
        steps:
            - name: peint goodby 
-             sh: |
-                  echo "GoodBy"
+             run: echo "GoodBy"
 
 
