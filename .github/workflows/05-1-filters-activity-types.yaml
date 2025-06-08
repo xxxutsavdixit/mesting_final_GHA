@@ -1,15 +1,12 @@
 name: 05 - 1 - Event Filters and Activity Types
 on:
-    pull_request: 
-        types:
-         - opened 
-         - synchronize
-        branches:
-         - main
+    workflow_dispatch:
 jobs:
     echo:
        runs-on: ubuntu-latest
        steps:
+           - name: Dump GitHub context
+             run: echo "${{ toJson(github) }}"
            - name: "How it got merged"
              run: echo "Running whenever a PR is opened or synchronized AND base branch is main"
 
