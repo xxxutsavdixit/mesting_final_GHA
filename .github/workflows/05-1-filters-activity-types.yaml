@@ -9,5 +9,7 @@ jobs:
              run: echo "${{ toJson(github) }}"
            - name: "How it got merged"
              run: echo "Running whenever a PR is opened or synchronized AND base branch is main"
+           - name: This is value:
+             run: echo "${{github.ref}}"
 
 
