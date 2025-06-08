@@ -10,6 +10,9 @@ jobs:
            - name: "How it got merged"
              run: echo "Running whenever a PR is opened or synchronized AND base branch is main"
            - name: This is value
-             run: echo "${{github.ref}}"
+             run: |
+                  BRANCH_NAME="${{github.ref}}"
+                  BRANCH_NAME=$(echo "$BRANCH_NAME" | sed 's|^refs/heads/||')
+                  echo "Branch name is: $BRANCH_NAME"
 
 
